@@ -20,10 +20,10 @@ class UI {
                   <br>
                   <br>
                   <ul class="list-group">
-                    <li class="list-group-item">Company: ${profileData.company}</li>
-                    <li class="list-group-item">Website/Blog: ${profileData.blog}</li>
-                    <li class="list-group-item">Location: ${profileData.location}</li>
-                    <li class="list-group-item">Member Since: ${profileData.created_at}</li>
+                    <li class="list-group-item"><strong>Company: ${profileData.company}</strong></li>
+                    <li class="list-group-item"><strong>Website/Blog: ${profileData.blog}</strong></li>
+                    <li class="list-group-item"><strong>Location: ${profileData.location}</strong></li>
+                    <li class="list-group-item"><strong>Member Since: ${profileData.created_at}</strong></li>
                   </ul>
                 </div>
               </div>
@@ -42,7 +42,7 @@ class UI {
           <div class="card card-body mb-2">
             <div class="row">
               <div class="col-md-6">
-                <a href="${repo.html_url} target="_blank">${repo.name}</a>
+                <a href="${repo.html_url} target="_blank" style="color: blue"><strong>${repo.name}</strong></a>
               </div>
               <div class="col-md-6">
                 <span class="badge badge-primary p-3 mr-1">Stars: ${repo.stargazers_count}</span>
